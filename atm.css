@@ -1,0 +1,71 @@
+
+.fondo{
+    height: 100%;
+    width: 700px;
+    background: linear-gradient(to right, rgb(51,51,51) 0%,rgb(128,128,128) 50%,rgb(51,51,51) 100%);
+    margin-left: 150px;
+
+}
+.contenedor {
+    height: 455px;
+    display: flex;
+    column-gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.panel_izq {
+    display: grid;
+    row-gap: 30px;
+}
+
+.but1 {
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+    background: linear-gradient(to bottom, rgb(233, 231, 231) 0%,rgb(65, 63, 63) 100%);
+    padding: 10px;
+    margin: 5px;
+    box-shadow: 0px 3px 0px rgb(65, 65, 65);
+}
+
+.pantalla {
+
+    height: 300px;
+    width: 400px;
+    background: linear-gradient(to right, rgb(51,51,51) 0%,rgb(65, 65, 65) 50%,rgb(51,51,51) 100%);
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+}
+
+.panel_der {
+    display: grid;
+    row-gap: 30px;
+}
+
+.pad {
+    background:  linear-gradient(to bottom, rgb(51,51,51) 0%,rgb(128,128,128) 90%);
+    border-style: solid;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 785px;
+    height: 290px;
+    position: absolute;
+    top : 445px;
+    left: 115px;
+    transform: perspective(20px) rotatex(1deg);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+
+
+#mostrarMonto, #si, #no {
+    display: none;
+}

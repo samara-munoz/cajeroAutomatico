@@ -5,27 +5,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./atm.css">
     <title>Cajero Automático</title>
 </head>
 
 <body>
+    <div class="fondo">
     <div class="contenedor">
         <div class="panel_izq">
-            <button id="retirar" onclick="persona.seleccionarMonto()" class="button"></button>
-            <button id="depositar" onclick="persona.seleccionarMonto()" class="button"></button>
-            <button id="saldo" onclick="persona.nuevoSaldo()" class="button"></button>
-            <button class="button"></button>
+            <button id="retirar" onclick="persona.seleccionarMonto()" class="button but1"> Retirar </button>
+            <button id="depositar" onclick="persona.seleccionarMonto()" class="button but1"> Depositar </button>
+            <button id="saldo" onclick="persona.nuevoSaldo()" class="button but1"> Saldo</button>
+            <button class="button but1"> otro boton </button>
         </div>
         <div class="pantalla">
         </div>
         <div class="panel_der">
-            <button class="button"> </button>
-            <button class="button"></button>
-            <button class="button"></button>
-            <button id="confirmar" onclick="persona.confirmarTransaccion()" class="button"></button>
+            <button class="button but1"> OPCION 1</button>
+            <button class="button but1"> OPCION 2</button>
+            <button class="button but1"> OPCION 3</button>
+            <button id="confirmar" onclick="persona.confirmarTransaccion()" class="button but1"> Confirmar</button>
         </div>
     </div>
+        <div class="pad">
+        <div class="col-sm-6 buttons">
+            <button id="button1" value="1">1</button>
+            <button id="button2" value="2">2</button>
+            <button id="button3" value="3">3</button>
+            <br>
+            <button id="button4" value="4">4</button>
+            <button id="button5" value="5">5</button>
+            <button id="button6" value="6">6</button>
+            <br>
+            <button id="button7" value="7">7</button>
+            <button id="button8" value="8">8</button>
+            <button id="button9" value="9">9</button>
+            <br>
+            <button id="delete" value="clear"> Clear</button>
+            <button id="button0" value="0">0</button>
+            <button id="space" value=" "> space</button>
+        </div>
+    </div>
+    
+    </div>
+
+
     <script src="./main.js"></script>
 </body>
 
