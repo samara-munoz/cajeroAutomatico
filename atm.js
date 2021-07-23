@@ -12,6 +12,16 @@ let no = document.getElementById('no')
 let salir = document.getElementById('salir')
 let gracias = document.getElementById('gracias')
 let mensajeSaldo = document.getElementById('mensajeSaldo')
+let button1 = document.getElementById('button1')
+let button2 = document.getElementById('button2')
+let button3 = document.getElementById('button3')
+let button4 = document.getElementById('button4')
+let button5 = document.getElementById('button5')
+let button6 = document.getElementById('button6')
+let button7 = document.getElementById('button7')
+let button8 = document.getElementById('button8')
+let button9 = document.getElementById('button9')
+let button0 = document.getElementById('button0')
 let retiro = false
 let deposito = false
 let montonuevo = 0
@@ -172,7 +182,7 @@ class Cajero {
         }
     }
     salirSesion() {
-        gracias.style.display = 'inline'
+        gracias.style.display = 'block'
         mensaje.innerHTML = 'Bienvenido a su cajero'
         identificacion.style.display = 'inline'
         constraseña.style.display = 'inline'
@@ -182,9 +192,31 @@ class Cajero {
         mensajeOperacion.innerHTML = ''
         gracias.innerHTML = 'GRACIAS POR UTILIZAR NUESTRO CAJERO'
     }
+    // boton1() {
+    //    if (identificacion.focus()===true){
+    //         identificacion.value = button1.value
+    //     }
+    // }
 }
+// class teclado extends Cajero {
+//     constructor(nombre,id,password,saldo) {
+//         super(nombre,id,password,saldo)
+//     }
+//     boton1() {
+//         if (identificacion.focus()){
+//             identificacion.value = button1.value
+//         }
+//     }
+// }
 const persona1 = new Cajero('Samara', '000', '9999', 50000)
 const persona2 = new Cajero('Javier', '111', '8888', 80000)
 const persona3 = new Cajero('Kelebra', '222', '7777', 70000)
 const persona4 = new Cajero('Valentina', '333', '6666', 60000)
 personas = [persona1, persona2, persona3, persona4]
+// console.log(button1.value)
+// console.log(identificacion.value)
+button1.addEventListener('click', function (e) {
+    if (identificacion.focus() === true) {
+        identificacion.textContent = identificacion.textContent + 1
+    }
+})

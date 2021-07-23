@@ -11,45 +11,53 @@
 
 <body>
     <div class="fondo">
-    <div class="contenedor">
-        <div class="panel_izq">
-            <button id="retirar" onclick="persona.seleccionarMonto()" class="button but1"> Retirar </button>
-            <button id="depositar" onclick="persona.seleccionarMonto()" class="button but1"> Depositar </button>
-            <button id="saldo" onclick="persona.nuevoSaldo()" class="button but1"> Saldo</button>
-            <button class="button but1"> otro boton </button>
+        <div class="superior"></div>
+        <div class="contenedor">
+            <div class="panel_izq">
+                <button id="retirar" onclick="persona.retirarDinero()" class="button but1"> Retirar </button>
+                <button id="depositar" onclick="persona.depositarDinero()" class="button but1"> Depositar </button>
+                <button id="saldo" onclick="persona.nuevoSaldo()" class="button but1"> Saldo</button>
+                <button class="button but1"> otro boton </button>
+            </div>
+            <div class="pantalla">
+                <h3 id="mensaje">Bienvenido a su cajero</h3>
+                <input class="formas" id="identificacion" placeholder="Ingresa tu ID" type="text">
+                <input class="formas" id="contraseña" placeholder="Ingresa tu contraseña" type="text">
+                <h4 id="mensajeOperacion"></h4>
+                <input id="mostrarMonto" placeholder="Ingresa el monto" type="text">
+                <h4 id="mensajeSaldo"></h4>
+                <h5 id="mensajeConfirmacion"></h5>
+                <button id="si" onclick="persona.siOperacion()"></button>
+                <button id="no" onclick="persona.noOperacion()"></button>
+                <h2 id="gracias"></h2>
+            </div>
+            <div class="panel_der">
+                <button class="button but1"> OPCION 1</button>
+                <button id="salir" onclick="persona.salirSesion()" class="button but1"> Salir</button>
+                <button id="validarIngreso" onclick="persona1.validarSesion()" class="button but1"> Ingresar</button>
+                <button id="confirmar" onclick="persona.confirmarTransaccion()" class="button but1"> Confirmar</button>
+            </div>
         </div>
-        <div class="pantalla">
-        </div>
-        <div class="panel_der">
-            <button class="button but1"> OPCION 1</button>
-            <button class="button but1"> OPCION 2</button>
-            <button class="button but1"> OPCION 3</button>
-            <button id="confirmar" onclick="persona.confirmarTransaccion()" class="button but1"> Confirmar</button>
-        </div>
-    </div>
         <div class="pad">
-        <div class="col-sm-6 buttons">
-            <button id="button1" value="1">1</button>
-            <button id="button2" value="2">2</button>
-            <button id="button3" value="3">3</button>
-            <br>
-            <button id="button4" value="4">4</button>
-            <button id="button5" value="5">5</button>
-            <button id="button6" value="6">6</button>
-            <br>
-            <button id="button7" value="7">7</button>
-            <button id="button8" value="8">8</button>
-            <button id="button9" value="9">9</button>
-            <br>
-            <button id="delete" value="clear"> Clear</button>
-            <button id="button0" value="0">0</button>
-            <button id="space" value=" "> space</button>
+            <div class="col-sm-6 buttons">
+                <button class="mybutton" id="button1" value="1">1</button>
+                <button class="mybutton" id="button2" value="2">2</button>
+                <button class="mybutton" id="button3" value="3">3</button>
+                <br>
+                <button class="mybutton" id="button4" value="4">4</button>
+                <button class="mybutton" id="button5" value="5">5</button>
+                <button class="mybutton" id="button6" value="6">6</button>
+                <br>
+                <button class="mybutton" id="button7" value="7">7</button>
+                <button class="mybutton" id="button8" value="8">8</button>
+                <button class="mybutton" id="button9" value="9">9</button>
+                <br>
+                <button class="mybutton" id="delete" value="clear"> Clear</button>
+                <button class="mybutton" id="button0" value="0">0</button>
+                <button class="mybutton" id="space" value=" "> space</button>
+            </div>
         </div>
     </div>
-    
-    </div>
-
-
     <script src="./main.js"></script>
 </body>
 

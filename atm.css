@@ -1,10 +1,24 @@
-
+#mostrarMonto, #si, #no {
+    display: none;
+}
 .fondo{
     height: 100%;
     width: 700px;
     background: linear-gradient(to right, rgb(51,51,51) 0%,rgb(128,128,128) 50%,rgb(51,51,51) 100%);
     margin-left: 150px;
-
+}
+.superior {
+    position:absolute;
+    width: 698px;
+    height: 50px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 2px;
+    background: linear-gradient(to right, rgb(51,51,51) 0%,rgb(128,128,128) 50%,rgb(51,51,51) 100%);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-style: solid;
+    box-shadow: 2px 8px 5px rgb(31 31 31);
 }
 .contenedor {
     height: 455px;
@@ -13,14 +27,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
+    border-style: solid;
+    border-color: black;
+    border-radius: 2px;
 }
-
 .panel_izq {
     display: grid;
     row-gap: 30px;
 }
-
 .but1 {
     border-radius: 5px;
     border-style: solid;
@@ -30,9 +44,7 @@
     margin: 5px;
     box-shadow: 0px 3px 0px rgb(65, 65, 65);
 }
-
 .pantalla {
-
     height: 300px;
     width: 400px;
     background: linear-gradient(to right, rgb(51,51,51) 0%,rgb(65, 65, 65) 50%,rgb(51,51,51) 100%);
@@ -40,12 +52,10 @@
     border-color: black;
     border-radius: 5px;
 }
-
 .panel_der {
     display: grid;
     row-gap: 30px;
 }
-
 .pad {
     background:  linear-gradient(to bottom, rgb(51,51,51) 0%,rgb(128,128,128) 90%);
     border-style: solid;
@@ -60,12 +70,39 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-
-
 }
-
-
-
+.buttons .mybutton {
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+    background: linear-gradient(to bottom, rgb(233, 231, 231) 0%,rgb(65, 63, 63) 100%);
+    height: 40px;
+    width: 60px;
+}
 #mostrarMonto, #si, #no {
     display: none;
+}
+.pantalla .formas {
+    margin-left: 10px;
+    border-radius: 1px;
+    border-style: solid;
+    border-color: black;
+}
+#gracias, #mensajeOperacion {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    text-shadow: black;
+}
+#mostrarMonto {
+    margin-left: 110px;
+    /* display: flex; */
+    /* align-items: center; */
+}
+h3 {
+    text-align: center;
+    /* margin-left: 50px; */
+    color: white;
+    font-size: 30px;
+    text-shadow: black;
 }
